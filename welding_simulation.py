@@ -2,8 +2,6 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from matplotlib.animation import FuncAnimation
 import numpy as np
-# import pandas as pd
-# import os
 ############################################################
 #                             INPUTS
 ############################################################
@@ -103,7 +101,6 @@ def calculo():
                          +Z[0,0]*deltat*alfa/(k*e)+(2*h*deltat*alfa/(k*e))*(T_aire-T[j,0,0]))
     return T
 
-
 def anim_2D(T,plotRealTime):
     fig, ax = plt.subplots(figsize=(8,8))
     cmap = plt.get_cmap('jet', 200)
@@ -137,7 +134,6 @@ def anim_2D(T,plotRealTime):
     else:
         anim(len(t)-1)
     plt.show()
-
 
 def points_temp(T,XcontrolP,YcontrolP,plotRealTime):
     fig, (ax1,ax2) = plt.subplots(1,2,figsize=(12,6))
